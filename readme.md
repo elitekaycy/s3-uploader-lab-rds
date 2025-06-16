@@ -35,10 +35,9 @@ mvn clean package
 docker build -t uploader-app .
 docker run -p 8080:8080 uploader-app with environments
 
-
-```
 AWS_S3_BUCKET=
 AWS_ACCESS_KEY=
 AWS_SECRET_KEY=
 AWS_REGION=
+
 ```
