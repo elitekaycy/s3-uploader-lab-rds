@@ -13,7 +13,7 @@ FROM eclipse-temurin:17-jdk-alpine
 
 WORKDIR /app
 
-COPY --from=build /build/target/uploader.jar app.jar
+COPY --from=build /build/target/uploader-rds.jar app.jar
 
 COPY entrypoint.sh .
 

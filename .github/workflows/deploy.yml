@@ -1,4 +1,4 @@
-name: Build and Push Java App to Private ECR
+name: Build and Push Java App to Private ECR (rds)
 
 on:
   push:
