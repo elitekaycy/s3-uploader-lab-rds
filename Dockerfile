@@ -13,6 +13,8 @@ FROM eclipse-temurin:17-jdk-alpine
 
 WORKDIR /app
 
+RUN apk add --no-cache curl
+
 COPY --from=build /build/target/uploader-rds.jar app.jar
 
 COPY entrypoint.sh .
